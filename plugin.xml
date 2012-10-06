@@ -1,0 +1,80 @@
+<plugin name='default-exception-handler' version='0.1' grailsVersion='2.1.0 &gt; *'>
+  <author>Your name</author>
+  <title>Default Exception Handler Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/default-exception-handler</documentation>
+  <type>DefaultExceptionHandlerGrailsPlugin</type>
+  <resources />
+  <repositories>
+    <repository name='http://repo.grails.org/grails/plugins/' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://maven.springframework.org/milestone/' url='http://maven.springframework.org/milestone/' />
+    <repository name='https://nexus.codehaus.org/content/repositories/snapshots' url='https://nexus.codehaus.org/content/repositories/snapshots/' />
+    <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
+    <repository name='http://download.java.net/maven/2/' url='http://download.java.net/maven/2/' />
+    <repository name='http://snapshots.repository.codehaus.org' url='http://snapshots.repository.codehaus.org/' />
+    <repository name='http://repository.codehaus.org' url='http://repository.codehaus.org/' />
+    <repository name='http://repository.jboss.com/maven2/' url='http://repository.jboss.com/maven2/' />
+    <repository name='http://maven.springframework.org/milestone' url='http://maven.springframework.org/milestone/' />
+  </repositories>
+  <dependencies>
+    <test>
+      <dependency group='org.seleniumhq.selenium' name='selenium-chrome-driver' version='2.24.1' />
+      <dependency group='org.codehaus.geb' name='geb-spock' version='latest.release' />
+      <dependency group='xmlunit' name='xmlunit' version='latest.release' />
+      <dependency group='org.seleniumhq.selenium' name='selenium-htmlunit-driver' version='2.24.1' />
+      <dependency group='org.seleniumhq.selenium' name='selenium-firefox-driver' version='2.24.1' />
+    </test>
+    <compile>
+      <dependency group='net.sf.opencsv' name='opencsv' version='2.0' />
+      <dependency group='com.lowagie' name='itext' version='2.0.8' />
+      <dependency group='org.mozilla' name='rhino' version='1.7R4' />
+      <dependency group='axis' name='axis' version='1.4' />
+      <dependency group='org.xhtmlrenderer' name='core-renderer' version='R8' />
+    </compile>
+    <runtime>
+      <dependency group='mysql' name='mysql-connector-java' version='latest.release' />
+    </runtime>
+  </dependencies>
+  <plugins>
+    <test>
+      <plugin group='org.grails.plugins' name='spock' version='0.6' />
+      <plugin group='org.grails.plugins' name='geb' version='0.7.2' />
+      <plugin group='org.grails.plugins' name='codenarc' version='latest.release' />
+      <plugin group='org.grails.plugins' name='code-coverage' version='latest.release' />
+    </test>
+    <compile>
+      <plugin group='org.grails.plugins' name='lesscss-resources' version='latest.release' />
+      <plugin group='org.grails.plugins' name='spring-security-core' version='1.2.4' />
+      <plugin group='org.grails.plugins' name='console' version='latest.release' />
+      <plugin group='org.grails.plugins' name='grails-melody' version='latest.release' />
+      <plugin group='org.grails.plugins' name='twitter-bootstrap' version='2.0.4' />
+      <plugin group='org.grails.plugins' name='bootstrap-file-upload' version='latest.release' />
+      <plugin group='org.grails.plugins' name='cloud-foundry' version='latest.release' />
+      <plugin group='org.grails.plugins' name='quartz2' version='latest.release' />
+      <plugin group='org.grails.plugins' name='mail' version='latest.release' />
+      <plugin group='org.grails.plugins' name='executor' version='0.3' />
+      <plugin group='org.grails.plugins' name='faker' version='0.6' />
+      <plugin group='org.grails.plugins' name='searchable' version='latest.release' />
+      <plugin group='org.grails.plugins' name='font-awesome-resources' version='latest.release' />
+      <plugin group='org.grails.plugins' name='standalone' version='latest.release' />
+      <plugin group='org.grails.plugins' name='rendering' version='latest.release' />
+    </compile>
+    <runtime>
+      <plugin group='org.grails.plugins' name='database-migration' version='latest.release' />
+      <plugin group='org.grails.plugins' name='resources' version='1.2-RC1' />
+      <plugin group='org.grails.plugins' name='gsp-resources' version='0.4.1' />
+      <plugin group='org.grails.plugins' name='hibernate' version='2.1.0' />
+      <plugin group='org.grails.plugins' name='jquery' version='latest.release' />
+    </runtime>
+    <build>
+      <plugin group='org.grails.plugins' name='tomcat' version='2.1.0' />
+      <plugin group='org.grails.plugins' name='jslint' version='latest.release' />
+    </build>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
